@@ -21,12 +21,12 @@ const routes = [
     icon: <MdDashboardCustomize />,
   },
   {
-    path: "/product_list",
+    path: "/podcaster-list",
     name: "Online List",
     icon: <AiFillFund />,
   },
   {
-    path: "/order_management",
+    path: "/friends",
     name: "Friends",
     icon: <FaBed />,
   },
@@ -42,13 +42,13 @@ const routes = [
     // exact: true,
     subRoutes: [
       {
-        path: "/setting/profile",
+        path: "/setting/profile/Sign-up",
         name: "Profile ",
         icon: <FaUser />,
       },
       {
-        path: "/settings/2fa",
-        name: "Sign Out",
+        path: "/settings/Sign-up",
+        name: "Sign Up",
         icon: <FaLock />,
       },
     ],
