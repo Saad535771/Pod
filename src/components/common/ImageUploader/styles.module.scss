@@ -1,0 +1,50 @@
+.imageUploaderWrapper {
+  margin-top: 19px;
+  label {
+    font-family: "poppins-bold";
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px;
+    color: #9f9f9f;
+    letter-spacing: 0.025em;
+  }
+  .imageUploader {
+    margin-top: 4px;
+    width: 100%;
+    p {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 14px;
+      line-height: 21px;
+      color: #9f9f9f;
+      margin-top: 10px;
+    }
+    label {
+      cursor: pointer;
+      input {
+        display: none;
+      }
+      .imageBox {
+        height: 111px;
+        border: 2px solid #898989;
+        border-radius: 3px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-family: "poppins-light";
+          font-style: normal;
+
+          font-size: 14px;
+          line-height: 21px;
+          color: #ababab;
+        }
+      }
+    }
+  }
+}

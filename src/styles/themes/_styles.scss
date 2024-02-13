@@ -1,0 +1,557 @@
+@import "./_variables.scss";
+@import "./Variables.scss";
+@import "./mixins";
+// @import "react-credit-cards/es/styles-compiled.css";
+
+// hoc main dashboard
+
+.hoc {
+  width: calc(100% - 282px);
+  margin-left: auto;
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 62px);
+  }
+}
+
+// btn - primary button
+
+// button same blue
+
+.button-primary {
+  min-width: 132px;
+  max-width: 132px;
+  margin: auto;
+  button {
+    background: $primary-color;
+    margin-top: 20px;
+    border-radius: 3px;
+    min-height: 41px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins-semi-bold";
+    font-style: normal;
+
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-transform: capitalize;
+
+    color: #ffffff;
+    &:focus {
+      outline: $primary-color auto 1px;
+    }
+    &:hover {
+      background: $primary-color;
+    }
+    &.secondary-btn {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  // button disbale color to white
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.Mui-disabled.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium {
+  color: white;
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.Mui-disabled.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.secondary-btn {
+  color: $primary-color;
+}
+
+.content-box {
+  padding-top: 60px;
+  padding-right: 28px;
+  padding-left: 44px;
+  padding-bottom: 30px;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+  overflow-y: scroll;
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+//active dashboard menu icon
+
+.dashboardNavlink {
+  &.active {
+    color: $primary-color !important;
+    svg path {
+      color: $primary-color;
+      stroke: $primary-color;
+    }
+  }
+}
+
+// accordian cursor
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(270deg) !important;
+  svg {
+    color: $primary-color;
+  }
+}
+
+// react select styling for industry page styles
+
+.selectCreate {
+  .react-select__control {
+    background: $white-color;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    width: 100%;
+    font-family: "poppins-light";
+    font-style: normal;
+
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    color: $grey-color;
+    padding: 3px;
+    min-height: 41px;
+    max-height: 41px;
+    box-shadow: none;
+
+    :focus-visible {
+      outline: $darkgray auto 1px;
+    }
+    &:hover {
+      border-color: $darkgray;
+      border: 1px solid $darkgray;
+    }
+    .react-select__option {
+      &:hover {
+        background-color: $darkgray;
+      }
+    }
+    .react-select__option.react-select__option--is-selected {
+      background-color: $darkgray;
+    }
+    .react-select__value-container.react-select__value-container--is-multi {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .react-select__multi-value {
+        min-width: 100px;
+      }
+    }
+    .react-select__indicator.react-select__clear-indicator {
+      display: none;
+    }
+  }
+  .react-select__menu {
+    background: #fcfcfc;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 12px 12px;
+    .react-select__option {
+      &:active {
+        background-color: $primary-color;
+        color: $white-color;
+      }
+
+      &.react-select__option--is-focused {
+        background-color: $primary-color;
+        color: $white-color;
+        &.react-select__option--is-selected {
+          background-color: $primary-color !important ;
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .react-select__indicator-separator {
+    display: none;
+  }
+}
+.pricingSelect {
+  .react-select__control {
+    max-width: 200px;
+    min-width: 200px;
+    // max-height: 20px;
+    min-height: 30px;
+    @media screen and (max-width: 400px) {
+      max-width: 100px;
+      min-width: 100px;
+    }
+  }
+  .react-select__value-container.react-select__value-container--is-multi {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .react-select__multi-value {
+      min-width: 100px;
+    }
+  }
+
+  .react-select__menu {
+    font-size: 10px;
+  }
+  .react-select__value-container {
+    padding: 0;
+  }
+  .react-select__indicator {
+    padding: 0;
+  }
+  .react-select__placeholder {
+    font-family: "poppins-light";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+    /* identical to box height, or 480% */
+
+    color: #818181;
+  }
+}
+.createJob {
+  .react-select__control {
+    border: 2px solid #898989 !important;
+  }
+}
+
+.jobSalary {
+  margin-right: 5px;
+  .react-select__control {
+    max-height: 42px;
+    border: 2px solid #898989;
+    .react-select__value-container {
+      padding: 0;
+    }
+    .react-select__indicator {
+      padding: 0;
+    }
+  }
+}
+.text-warning {
+  color: #e18e11;
+}
+
+.jobSalaryy {
+  .react-select__control {
+    max-height: 42px;
+    border: 2px solid #898989;
+    border-radius: 6px;
+    &:hover {
+      border-color: #898989;
+      border: 2px solid #898989;
+    }
+  }
+}
+// indicator for tabs
+.MuiTabs-indicator {
+  background-color: $primary-color !important;
+  border-radius: 2px !important;
+  height: 3px !important;
+}
+
+// error-msg
+.error-class {
+  margin-top: 5px;
+  display: block;
+  color: $red-color;
+  font-family: "poppins-semi-bold";
+  font-size: 12px;
+}
+
+.timebox {
+  @media screen and (min-width: 601px) {
+    margin-top: 20px;
+  }
+}
+.time-picker-custom {
+  padding: 0 !important;
+  #start-component {
+    @media screen and (max-width: 600px) {
+      margin-top: 20px !important;
+      display: block !important;
+    }
+  }
+  .component {
+    padding-left: 0px !important;
+    @media screen and (max-width: 600px) {
+      padding: 0 !important;
+    }
+
+    .label {
+      font-family: "poppins-light";
+      font-style: normal;
+      font-size: 15px;
+      line-height: 22px;
+
+      letter-spacing: 0.025em;
+      color: #000000;
+      margin-bottom: 4px;
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+    }
+    select {
+      background: #ffffff !important;
+      border: 1px solid #afafaf;
+      border-radius: 3px !important;
+
+      font-family: "poppins-light";
+      font-style: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.025em;
+      color: $black-color;
+      padding: 3px;
+      min-height: 41px;
+      max-height: 41px;
+      box-shadow: none;
+      &:focus-visible {
+        outline: $primary-color auto 1px;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 !important;
+    #end-component {
+      display: block !important;
+      margin-top: 20px !important;
+    }
+  }
+}
+
+#react-time-range .error {
+  margin-top: 5px;
+  max-width: 250px;
+  display: block;
+  color: $red-color;
+  font-family: "poppins-semi-bold";
+  font-size: 12px;
+}
+
+// label container
+
+.labelContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "poppins-regular";
+  font-style: normal;
+
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+  color: $black-color;
+}
+
+/* Hide the browser's default checkbox */
+.labelContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid $primary-color;
+  width: 25px;
+}
+
+/* On mouse-over, add a grey background color */
+.labelContainer:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.labelContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.labelContainer .checkmark:after {
+  background-color: $primary-color;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//drop down box shadow removed
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper {
+  box-shadow: none !important;
+  border: 1px solid #eee;
+}
+
+// loadder class
+
+.loader {
+  width: 100%;
+  min-height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  * {
+    color: black;
+  }
+}
+
+// change table on hover
+
+tr {
+  &:hover {
+    td {
+      color: $primary-color !important;
+    }
+  }
+}
+
+// color green success
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation0.MuiAlert-root.MuiAlert-filledError.MuiAlert-filled {
+  background: #00cfc5 !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation0.MuiAlert-root.MuiAlert-filledSuccess.MuiAlert-filled {
+  background: #00cfc5 !important;
+}
+
+// tagbox
+
+.tagsbox {
+  background: #ffffff;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  max-width: 320px;
+  position: relative;
+  min-height: 41px;
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px !important;
+  letter-spacing: 0.025em;
+  color: #9a9696;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 19px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .tagbox {
+    font-size: 10px;
+    background-color: $primary-color;
+    max-width: auto;
+    padding: 10px;
+    margin-left: 10px;
+    min-width: 200px;
+    color: $white-color;
+    &:hover {
+      &:first-child {
+        background-color: $primary-color !important;
+        cursor: default;
+      }
+      background-color: $red-color;
+      cursor: pointer;
+    }
+  }
+}
+
+// table-layout
+// table {
+// }
+.MuiTableContainer-root {
+  table {
+    width: 100% !important;
+    // min-height: 350px !important;
+
+    @media screen and (min-width: 1300px) {
+      table-layout: fixed !important;
+      width: 100% !important;
+      // width: initial !important;
+      min-width: auto !important;
+    }
+  }
+}
+
+// model responsiveness
+
+.xym1 {
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.MuiList-root.MuiList-padding.MuiMenu-list {
+  li {
+    font-family: "poppins-light";
+    font-size: 12px;
+  }
+}
+
+.text-green {
+  color: #00cfc5 !important;
+}
+
+.button-table {
+  min-height: 29px;
+  border: 1px solid #afafaf;
+  border-radius: 2px;
+  max-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "poppin-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #6c6a6a;
+}

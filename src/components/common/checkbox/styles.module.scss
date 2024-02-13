@@ -1,0 +1,22 @@
+@import "../../../styles/theme/variables";
+.checkBox {
+  display: flex;
+  align-items: center;
+
+  img {
+    max-width: 25px;
+    cursor: pointer;
+  }
+  span {
+    font-family: "poppins-regular";
+    font-style: normal;
+
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    /* or 120% */
+
+    color: $black-color;
+  }
+}

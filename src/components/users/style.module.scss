@@ -1,0 +1,83 @@
+@import "../../styles/themes/mixins";
+@import "../../styles/themes/Variables.scss";
+
+.parent{
+    @media screen and (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    .user_main_box{
+        @media screen and (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        display: flex;
+        justify-content: center;
+
+        .iconfield{
+            @include inputstyle;
+            width: 100%;
+            height: 50px;
+            @media screen and (max-width: 424px) {
+                width: 100%;
+              }
+        }
+        .card_box{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            .card_main_box{
+                // width: 100%;
+                border: 1px solid #0d99ff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 30px;
+                border-radius: 27px;
+                width: 284px;
+                height: 416px;
+                margin-bottom: 30px;
+                @media screen and (max-width: 375px) {
+                    width: 250px;
+                  }
+                .card_img_box{
+                    margin: 10px 0px;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                    padding: 30px;
+                    background-color: $background_clr;
+                    .card_img{
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                h4{
+                    padding-top: 30px;
+                    @include subHeading;
+                    margin: 0;
+                }
+                h6{
+                    @include paragraph;
+                    font-size: 0.8em;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+    
+   
+}

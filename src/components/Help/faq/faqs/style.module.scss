@@ -1,0 +1,29 @@
+@import "../../../../styles/themes/mixins";
+@import "../../../../styles/themes/Variables.scss";
+
+
+
+.parent{
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    .faq_main_head{
+        h6{
+            @include paragraph;
+            // text-align: center;
+            margin: 10px 0px;
+        }
+        h4{
+            @include main_heading;
+        }
+    }
+     .cardContainer {
+        // margin-top: 30px;
+        .faqcard{
+            // display: flex;
+            // justify-content: center;
+            margin: 10px 0px;
+        }
+      }
+}

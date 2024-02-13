@@ -1,0 +1,83 @@
+@import "../../styles/themes/mixins" ;
+@import "../../styles/themes/Variables.scss" ;
+
+.parent{
+    background-color: white;
+    // padding-top: 20px;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    // margin-right: 10px;
+    
+    .main_Box{
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        img{
+            width: 100px;
+        }
+        .left_box{
+            padding-left: 30px;
+            display: flex;
+            justify-content: flex-start;
+            @media screen and (max-width: 426px) {
+                // justify-content: center;
+                margin-bottom: 10px;
+                padding-left: 30px;
+            }
+            .buttonbox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15px;
+
+                button{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+        .rightbox{
+            padding-right: 28px;
+            display: flex;
+            justify-content: flex-end;
+            @media screen and (max-width: 600px) {
+                padding-right: 0px;
+                justify-content: center;
+               .img_box{
+                padding: 5px;
+               }
+            }
+            .img_box{
+                background-color: #f0f2f5;
+                width: 35px;
+                height: 35px;
+                // padding: 20px;
+                // padding-top: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            h5{
+                padding: 10px 12px;
+                font-size: 0.9em;
+                font-weight: bold;
+                text-align: center;
+            }
+            h6{
+                padding: 0px 10px;
+                font-size: 0.8em;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@import "../../../styles/theme/variables";
+.headers {
+  max-width: 761px;
+
+  h5 {
+    font-family: "poppins-semi-bold";
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 0.2px;
+    // text-transform: capitalize;
+
+    color: #000000;
+  }
+  p {
+    font-family: "poppins-regular";
+    font-style: normal;
+
+    font-size: 13px !important;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.2px;
+    // text-transform: capitalize;
+
+    color: #757575;
+    @media screen and (min-width: 992px) {
+      flex: 0 0 50%;
+    }
+  }
+  .conents {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    margin: 30px 0;
+    @media screen and (max-width: 992px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+    // .spacebox {
+    //   margin-right: 10px;
+    // }
+    .select {
+      margin: 0;
+      min-width: 220px;
+      @media screen and (max-width: 575px) {
+        min-width: 100%;
+      }
+    }
+    .button {
+      margin: 0;
+      max-width: 150px !important;
+      @media screen and (max-width: 575px) {
+        margin-top: 20px;
+      }
+      button {
+        margin: 0;
+
+        /* or 200% */
+        font-size: 12px;
+
+        text-align: center;
+
+        color: $white-color;
+
+        &.button2 {
+          background-color: transparent !important;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          margin-bottom: 10px;
+          svg {
+            color: $primary-color;
+            max-height: 18px;
+            margin-right: 10px;
+            path {
+              color: $primary-color;
+              stroke: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .para {
+    font-family: "poppins-regular";
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.1px;
+  }
+}
+
+.boxLoading {
+  min-height: 122px;
+  position: relative;
+}
+
+.boxContainer {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 992px) {
+    margin-left: 10px;
+  }
+
+  svg {
+    cursor: pointer;
+    margin-left: 5px;
+    max-width: 18px;
+    max-height: 18px;
+  }
+  svg path {
+    color: $primary-color;
+    stroke: $primary-color;
+  }
+}

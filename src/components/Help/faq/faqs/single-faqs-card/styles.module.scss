@@ -1,0 +1,41 @@
+@import "../../../../../styles/themes/mixins";
+@import "../../../../../styles/themes/Variables.scss";
+.faqCard {
+  background: #FFFFFF;
+  border: 2px solid #BBBBBB;
+  border-radius: 10px;
+  width: 800px;
+  // align-items: center;
+  // max-width: 400px;
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    // justify-content: space-between;
+    button{
+      // @include button_outline;
+      img{
+        // color: $yellow;
+      }
+      
+    }
+    h5{
+      @include subHeading;
+      font-size: 1em;
+    }
+    // .btnToggler {
+    //   padding: 0;
+    //   margin-right: 20px;
+    //   border: 2px solid yellow;
+    //   // min-width: unset;
+    // }
+  }
+  .cardBody {
+    border-top: 2px solid #BBBBBB;
+    padding: 15px 30px;
+    // padding-top: 10px;
+    h6 {
+      
+    }
+  }
+}

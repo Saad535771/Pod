@@ -1,0 +1,93 @@
+@mixin main_heading {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7em;
+    line-height: 36px;
+    color: black;
+    @media screen and (max-width: 480px) {
+      font-size: 1.5em;
+    }
+    // text-align: center;
+  }
+  @mixin subHeading {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 36px;
+    color: black;
+    // text-align: center;
+  }
+  @mixin paragraph {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 30px;
+    color: #696E70;
+    // text-align: center;
+  }
+
+  @mixin inputstyle{
+    border: 2px solid #afafaf;
+    border-radius: 6px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+    
+    &:focus{
+        border: 2px solid $darkgray;
+    }
+    &::placeholder{
+        font-family: $Poppins;
+        // padding-left: 10px;
+        font-size: 13px;
+    }
+}
+//  @mixin inputstyle {
+//     background: white;
+//     border: 1px solid #afafaf;
+//     border-radius: 3px;
+//     width: 100%;
+//     min-height: 15px;
+//     font-family: $Poppins;
+//     font-style: normal;
+
+//     font-size: 12px;
+//     line-height: 18px;
+//     /* identical to box height */
+//     padding: 10px 33px;
+//     letter-spacing: 0.025em;
+//     margin-bottom: 15px;
+
+//     color: $darkgray;
+//     &:focus-visible {
+//       outline: $darkgray auto 1px;
+//     }
+//     &::placeholder {
+//       font-family: $Poppins;
+//       font-style: normal;
+
+//       font-size: 12px;
+//       line-height: 18px;
+//       /* identical to box height */
+
+//       letter-spacing: 0.025em;
+
+//       color: $darkgray;
+//     }
+//   }
+  @mixin buttonstyle{
+    background-color: $darkgray;
+    width: 200px;
+    // min-width: 20%;
+    height: 35px;
+    text-align: center;
+    &:hover{
+        background-color: $darkgray;
+    }
+  }

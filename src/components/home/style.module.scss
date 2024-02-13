@@ -1,0 +1,26 @@
+
+.parent{
+    .hoc {
+        width: calc(100% - 220px);
+        margin-left: auto;
+      
+        @media screen and (max-width: 767px) {
+          width: calc(100% - 40px);
+        }
+      }
+      .content_box {
+        padding-top: 20px;
+        padding-right: 28px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        max-height: calc(100vh - 100px);
+        overflow: auto;
+        overflow-y: scroll;
+        @media screen and (max-width: 992px) {
+          padding-top: 30px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 30px;
+        }
+      }
+}

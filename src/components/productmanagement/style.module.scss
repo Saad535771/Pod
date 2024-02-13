@@ -1,0 +1,21 @@
+@import "../../styles/themes/mixins";
+@import "../../styles/themes/Variables.scss";
+// @import "../../styles/themes/styles";
+.parent{
+    // border: 1px solid red;
+    @media screen and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    
+    // input{
+    //     @include inputstyle;
+    // }
+}

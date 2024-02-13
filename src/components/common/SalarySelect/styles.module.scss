@@ -1,0 +1,28 @@
+.jobSalaryWrapper {
+  margin-top: 15px;
+  label {
+    font-family: "poppins-bold";
+
+    font-size: 14px;
+    line-height: 22px;
+    color: #9f9f9f;
+    margin-bottom: 4px;
+  }
+  .jobSalary {
+    display: flex;
+    align-items: center;
+    .salarySelect {
+      max-width: 70px;
+      min-width: 70px;
+    }
+    .createJobInp {
+      min-width: unset;
+      max-width: 100%;
+      width: 100%;
+      input {
+        border: 2px solid #898989;
+        border-radius: 3px;
+      }
+    }
+  }
+}

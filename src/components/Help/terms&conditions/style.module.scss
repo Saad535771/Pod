@@ -1,0 +1,22 @@
+@import "../../../styles/themes/mixins";
+@import "../../../styles/themes/Variables.scss";
+
+.parent{
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    h5{
+        @include subHeading;
+    }
+    h6{
+        @include paragraph;
+    }
+    ul{
+        padding-left: 25px;
+        li{
+            @include paragraph;
+            list-style-type: disc;
+        }
+    }
+}

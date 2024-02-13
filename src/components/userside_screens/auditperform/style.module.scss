@@ -1,0 +1,25 @@
+@import "../../../styles/themes/mixins";
+@import "../../../styles/themes/Variables.scss";
+
+
+.parent{
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    .main_box{
+        border: 2px solid $darkgray;
+        border-radius: 15px;
+        padding: 20px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 20px;
+
+        h5{
+            @include subHeading;
+        }
+        h6{
+            @include paragraph;
+        }
+    }
+}
