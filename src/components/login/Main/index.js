@@ -73,6 +73,19 @@ const Login = () => {
                     {errors.password && touched.password && errors.password}
                   </span>
                 </Box>
+                <Box className={styles.parentInput}>
+                  <TextInput
+                    label="Confirm Password"
+                    type="password"
+                    name="password"
+                    placeholder="Enter verified password here. "
+                    onChange={handleChange}
+                    value={values.password}
+                  />
+                  <span className={styles.error}>
+                    {errors.password && touched.password && errors.password}
+                  </span>
+                </Box>
                 <Box className={styles.forget}>
                   <Link to={routes.FORGET_PASSWORD}>Forgot Password?</Link>
                 </Box>
@@ -84,7 +97,7 @@ const Login = () => {
                     sx={{ marginBottom: "10px" }}
                     onClick={handleSubmit}
                   >
-                    Sign in
+                    Sign Up
                     {/* {auth?.isLoading ? (
                       <CircularProgress style={{ color: "white" }} />
                     ) : (
