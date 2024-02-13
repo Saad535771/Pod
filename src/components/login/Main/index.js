@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, CircularProgress, Grid, Typography } from "@mui/material";
 import styles from "./styles.module.scss";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link,} from "react-router-dom";
 import TextInput from "../../common/TextInput";
 import { routes } from "../../../routes";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, } from "formik";
 import * as Yup from "yup";
-import forthealthlogo from "../../../assets/images/fortehealthlogo.png";
-import LoginImage from "../../../assets/images/login_images/login.png";
+import LoginImage from "../../../assets/images/fortehealthlogo.png";
 const Login = () => {
   const onSubmit = (values) => {
     // console.log( values);
@@ -34,10 +33,8 @@ const Login = () => {
       <Grid container className={styles.parent_main}>
         <Grid item sm={6}>
         <Box className={styles.leftBox}>
-        <Typography variant="h1">Welcome to!</Typography>
+        <Typography variant="h1">Welcome to Our Podcaster!</Typography>
         <Box className={styles.content}>
-          <Typography variant="h3">Huixiouior Smart Cloud <br />
-              WareHouse Shipping System</Typography>
           <Formik
           initialValues={initialValues}
           validationSchema={SignupSchema}
