@@ -1,48 +1,195 @@
-# Forte-Health-React
+[![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
+[![npm package][npm-coreui-badge]][npm-coreui]
+[![NPM downloads][npm-coreui-download]][npm-coreui]  
+[![@coreui react](https://img.shields.io/badge/@coreui%20-react-lightgrey.svg?style=flat-square)](https://github.com/coreui/react)
+[![npm package][npm-coreui-react-badge]][npm-coreui-react]
+[![NPM downloads][npm-coreui-react-download]][npm-coreui-react]  
 
-# Editing this README
+[npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
+[npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
+[npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square
+[npm-coreui-react]: https://www.npmjs.com/package/@coreui/react
+[npm-coreui-react-badge]: https://img.shields.io/npm/v/@coreui/react.png?style=flat-square
+[npm-coreui-react-download]: https://img.shields.io/npm/dm/@coreui/react.svg?style=flat-square
+[npm]: https://www.npmjs.com/package/@coreui/react
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+# CoreUI Free React Admin Template
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
-## Name
-Choose a self-explaining name for your project.
+## Table of Contents
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+* [Versions](#versions)
+* [CoreUI Pro](#coreui-pro)
+* [Quick Start](#quick-start)
+* [Installation](#installation)
+* [Basic usage](#basic-usage)
+* [What's included](#whats-included)
+* [Documentation](#documentation)
+* [Versioning](#versioning)
+* [Creators](#creators)
+* [Community](#community)
+* [Support CoreUI Development](#support-coreui-development)
+* [Copyright and License](#copyright-and-license)
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Versions
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
+* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
+* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## CoreUI Pro
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
+* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
+* 💪  [CoreUI Pro React Admin Template](https://coreui.io/product/react-dashboard-template/)
+* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## Quick Start
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- [Download the latest release](https://github.com/coreui/coreui-free-react-admin-template/archive/refs/heads/main.zip)
+- Clone the repo: `git clone https://github.com/coreui/coreui-free-react-admin-template.git`
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Installation
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+``` bash
+$ npm install
+```
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+or
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+``` bash
+$ yarn install
+```
 
-## License
-For open source projects, say how it is licensed.
+### Basic usage
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+``` bash
+# dev server with hot reload at http://localhost:3000
+$ npm start 
+```
+
+or 
+
+``` bash
+# dev server with hot reload at http://localhost:3000
+$ yarn start
+```
+
+Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
+
+#### Build
+
+Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
+
+```bash
+# build for production with minification
+$ npm run build
+```
+
+or
+
+```bash
+# build for production with minification
+$ yarn build
+```
+
+## What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+coreui-free-react-admin-template
+├── public/          # static files
+│   └── index.html   # html template
+│
+├── src/             # project root
+│   ├── assets/      # images, icons, etc.
+│   ├── components/  # common components - header, footer, sidebar, etc.
+│   ├── layouts/     # layout containers
+│   ├── scss/        # scss styles
+│   ├── views/       # application views
+│   ├── _nav.js      # sidebar navigation config
+│   ├── App.js
+│   ├── ...
+│   ├── index.js
+│   ├── routes.js    # routes config
+│   └── store.js     # template state example 
+│
+└── package.json
+```
+
+## Documentation
+
+The documentation for the CoreUI Admin Template is hosted at our website [CoreUI for React](https://coreui.io/react/)
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+
+See [the Releases section of our project](https://github.com/coreui/coreui-free-react-admin-template/releases) for changelogs for each release version.
+
+## Creators
+
+**Łukasz Holeczek**
+* <https://twitter.com/lukaszholeczek>
+* <https://github.com/mrholek>
+* <https://github.com/coreui>
+
+**CoreUI team**
+* https://github.com/orgs/coreui/people
+
+## Community
+
+Get updates on CoreUI's development and chat with the project maintainers and community members.
+
+- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
+- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
+
+## Support CoreUI Development
+
+CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](https://coreui.io/pricing/) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
+
+<!--- StartOpenCollectiveBackers -->
+
+### Platinum Sponsors
+
+Support this project by [becoming a Platinum Sponsor](https://opencollective.com/coreui/contribute/platinum-sponsor-40959/). A large company logo will be added here with a link to your website.
+
+<a href="https://opencollective.com/coreui/contribute/platinum-sponsor-40959/checkout"><img src="https://opencollective.com/coreui/tiers/platinum-sponsor/0/avatar.svg?avatarHeight=100"></a>
+
+### Gold Sponsors
+
+Support this project by [becoming a Gold Sponsor](https://opencollective.com/coreui/contribute/gold-sponsor-40960/). A big company logo will be added here with a link to your website.
+
+<a href="https://opencollective.com/coreui/contribute/gold-sponsor-40960/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a> 
+
+### Silver Sponsors
+
+Support this project by [becoming a Silver Sponsor](https://opencollective.com/coreui/contribute/silver-sponsor-40967/). A medium company logo will be added here with a link to your website.
+
+<a href="https://opencollective.com/coreui/contribute/silver-sponsor-40967/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a>
+
+### Bronze Sponsors
+
+Support this project by [becoming a Bronze Sponsor](https://opencollective.com/coreui/contribute/bronze-sponsor-40966/). The company avatar will show up here with a link to your OpenCollective Profile.
+
+<a href="https://opencollective.com/coreui/contribute/bronze-sponsor-40966/checkout"><img src="https://opencollective.com/coreui/tiers/bronze-sponsor/0/avatar.svg?avatarHeight=100"></a> 
+
+### Backers
+
+Thanks to all the backers and sponsors! Support this project by [becoming a backer](https://opencollective.com/coreui/contribute/backer-40965/).
+
+<a href="https://opencollective.com/coreui/contribute/backer-40965/checkout" target="_blank" rel="noopener"><img src="https://opencollective.com/coreui/backers.svg?width=890"></a>
+
+<!--- EndOpenCollectiveBackers -->
+
+## Copyright and License
+
+copyright 2023 creativeLabs Łukasz Holeczek.   
+
+ 
+Code released under [the MIT license](https://github.com/coreui/coreui-free-react-admin-template/blob/master/LICENSE).
+There is only one limitation you can't can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
+
